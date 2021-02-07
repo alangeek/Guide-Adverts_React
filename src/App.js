@@ -1,9 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+import Routes from './Routes';
 
 const Page = (props) => {
   return (
-    <div>Opá, Funcionando...</div>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   );
 }
 
@@ -15,7 +20,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    
+
   };
 }
 
