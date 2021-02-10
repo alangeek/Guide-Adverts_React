@@ -13,6 +13,19 @@ const Header = () => {
             <img className='logo' src={logo} alt='logo' />
           </Link>
         </div>
+        <nav>
+          <ul>
+            <li>
+              <Link to=''>Login</Link>
+            </li>
+            <li>
+              <Link className='' to=''>Cadastrar</Link>
+            </li>
+            <li>
+              <Link className='btn-cta' to=''>Poste um anúncio</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </HeaderArea>
   );

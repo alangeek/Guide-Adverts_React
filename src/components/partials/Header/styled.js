@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderArea = styled.div`
-  background-color: #fff;
+  background-color: #060b1f;
   height: 80px;
   border-bottom: 1px solid #ccc;
   
@@ -10,20 +10,56 @@ export const HeaderArea = styled.div`
     margin: auto;
     display: flex;
     align-items: center;
-    padding-top: 15px;
   }
 
   .logo {
-  display: flex;
-  align-items: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
 
-  border: 1px solid #D7DBDD;
-  width: 48px;
-  height: 48px;
-  border-radius: 100%;
-  box-shadow:
-    0 2px 1px rgba(0, 0, 0, 0.05),
-    0 2px 3px rgba(0, 0, 0, 0.05),
-    0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 50px;
+    height: 50px;
   }
+
+  nav {
+    padding: 5px 0;
+
+    user-select, li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      height: 40px;
+    }
+    li {
+      margin: 0 20px;
+    }
+
+    a {
+      color: #fff;
+      font-size: 14px;
+      text-decoration: none;
+      transition: all 0.5s;
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+      &.btn-cta {
+        border-radius: 7px;
+        background-color: #ff3366;
+        padding: 10px;
+        transition: all 0.5s;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  
 `;
