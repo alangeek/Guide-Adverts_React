@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
 export const PageArea = styled.div`
-  width: 100%; 
-  display: flex;
-  justify-content: center;
+  width: 50%; 
+  margin-left: 25%;
   background-color: #fff;
   border-radius: 3px;
   padding: 10px;
@@ -16,7 +15,7 @@ export const PageArea = styled.div`
     max-width: 500px;
 
     .area--title {
-      width: 200px;
+      width: 100px;
       text-align: right;
       padding-right:20px;
       font-weight: bold;
